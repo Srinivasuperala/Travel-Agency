@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Travel Reviews</title>
+    <style>
+         h1{
+            color: crimson;
+            font-family:cursive;
+            text-align: center;
+        }
+        div.msg{
+             text-align: center;
+             border: 2px;
+             border-radius: 8px;
+             background-color: lightskyblue;
+             width:220px;
+             height:240px;
+             padding:8px;
+        }
+        footer{
+  background-color: lightgray;
+}
+        div.footmain{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+     
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Travel Reviews</h1>
+    <h4>R V Eswar</h4><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i>
+    <p><b> Excellent Trip arranged </b><br>
+    Excellent Trip arranged by safe travel team.Mr.Sachin has supported since booking and continue taking feedback till end of trip. They have provided the Very Good Hotel and well experienced driver who has taken every movement with safety and excellent driving skills. 
+      We are excited with the trawellin package and the paid money is full worth of it in which they have fulfilled their commitment. Thanks to team and keep it up the same.</p>
+      <h4>Khaja khan</h4><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i>
+      <p><b>2days trip to Araku</b><br>
+        Planned a 2days trip to Araku. Was very good experience, especially the resort booked. Sachin from the team made sure that all the services were provided correctly. Overall a great trip!!</p>
+        <h4>Srikanth Lagishetti</h4><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i>
+        <p><b>Comfortable travel.</b><br>
+          We had a 4 Day trip through Travels. It was an awesome experience with travels. The driver Soma shekar was very helpful, polite and supportive. I recommend Travel to my friends for any trips in Karnataka.</p>
+          <h4>John Lee</h4><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i>
+          <p>We have just got back from a 1 week stay on the beautiful Amalfi coast. Alberto and Sarah really looked after us. Sarah made sure our trip was organised and great fun. Alberto is extremely knowledgable about the area and took us around the amazing sites, restaurants and views. We will definitely book with them.</p>
+      <h4>Melissa W</h4><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i>
+      <p>Our initial booking with Sarah was superb - all responses were made in a timely manner and most accommodating. We booked the Full Amalfi Coast day tour from Naples Cruise Terminal</p>
+      <h4>Sharon E</h4><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i><i class="fa-solid fa-star" style="color:yellow"></i>
+          <p><b>Best Transport Service</b><br>
+            The trip was truly enjoyable and exceptional. Our travel agent, Mr. Sachin, arranged for Prasanth, who turned out to be an excellent driver. However, calling him just a driver does not do justice to his skills and expertise. 
+            He truly deserves to be referred to as a knowledgeable and insightful Tour Guide. Prasanth is fluent in English and Kannada, and possesses extensive knowledge about the various places we visited.</p>
+
+    <footer>
+        <div class="footmain">
+        <div style="margin-bottom: 15%;">
+            <h2><i style="font-size: 30px;">Contact Us</i></h2>
+            <pre style="font-size: 15px;">
+              <i class="fa-solid fa-phone"></i><b>Mobile Number:</b>9876543210.
+              <i class="fa-brands fa-whatsapp"></i><b>WhatsApp Number:</b>9876543210.
+              <i class="fa-regular fa-envelope"></i><b>Email Address:</b>srinivas@gmail.com.
+              <b>Timings:</b>8:00 AM to 9:00 PM, 365 days.
+            </pre>
+          </div>
+          <div class="msg">
+            <h2 style="color:white;">Review Here...</h2>
+            <form action="" onsubmit="return review()">
+                <input type="text"placeholder="Full Name" required><br><br>
+                <input type="radio" ><i class="fa-solid fa-star" style="color:yellow"></i>
+                <input type="radio" ><i class="fa-solid fa-star" style="color: yellow"></i>
+                <input type="radio" ><i class="fa-solid fa-star" style="color: yellow"></i>
+                <input type="radio" ><i class="fa-solid fa-star" style="color: yellow;"></i>
+                <input type="radio" ><i class="fa-solid fa-star" style="color: yellow;"></i><br><br>
+                <textarea rows="3"cols="25" placeholder="Comment/Message..."required></textarea>
+               <center><input type="submit"value="Submit"></center> 
+            </form>
+          </div>
+        </div>
+    </footer>
+    <script>
+        function review(){
+            alert("Thank for the Review!");
+        }
+    </script>
+</body>
+</html>

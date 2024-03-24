@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form</title>
+        <style>
+            body{
+                background-image:url("https://wallpaperaccess.com/full/2314983.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .heading{
+                font-size: 70px;
+                text-shadow: 1px 3px rgb(234, 232, 136) ;
+                color:rgb(240, 52, 58);
+               
+            }
+.log{
+    border:2px solid rgb(235, 159, 159);
+    width: 30%;
+    height:230px;
+    text-align:center;
+    box-shadow: 3px 3px 5px 5px darkslateblue;
+    border-radius:5px;
+    background-color: rgb(208, 227, 243);
+}
+.line{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 150px;
+}
+p{
+    font-weight: bold;
+}
+        </style>
+    </head>
+    <body>
+        <div class="line">
+       <div class="heading"> <p>Srinivasa <br>&nbsp;&nbsp;&nbsp;&nbsp; Safe Travels</p></div>
+    <div class="log">
+<center><h2>Sign in Form</h2></center>
+
+<form name="form" action="main page.html" onsubmit="return validate()">
+<p>Enter Name:<input type="text" name="name"placeholder=" Full Name">
+    <p>Enter Number:<input type="text" name="number" placeholder="Enter Number"> 
+  <p>Enter Password:<input type="password" name="password" ><br><br>
+    <input type="submit" value="Sign in" style="cursor: pointer;font-weight: bold;"> 
+    </form> 
+    </div>
+</div>
+<script>
+    function validate(){
+       var nam=document.form.name.value;
+        if(nam==null||nam==""){
+            alert("Enter your name");
+        }
+        var num=document.form.number.value;
+    if(isNaN(num)){
+        alert("Enter Valid Number");  
+        return false;
+    }
+    
+   var pw=document.form.password.value;
+    if(pw.length<=7){
+        alert("Entered password must be 8 characters and one special character");
+        return false;
+    }
+    }
+  </script> 
+</body>
+</html>
